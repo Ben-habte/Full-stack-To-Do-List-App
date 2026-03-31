@@ -1,0 +1,187 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.app-header {
+  background: linear-gradient(135deg, #1A5276, #2980b9);
+  color: white;
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.app-header h1 { font-size: 28px; margin-bottom: 12px; }
+
+.stats-bar {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.stats-bar span { opacity: 0.9; }
+
+.error-banner {
+  background: #e74c3c;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.add-section, .todos-section {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.add-section h2 { margin-bottom: 16px; color: #1A5276; font-size: 18px; }
+
+.add-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.add-form input, .add-form select {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.add-form input:focus, .add-form select:focus {
+  outline: none;
+  border-color: #1A5276;
+}
+
+.add-form input[type="text"]:first-child { grid-column: 1 / -1; }
+
+.btn-primary {
+  background: #1A5276;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  grid-column: 1 / -1;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover { background: #154360; }
+
+.btn-secondary {
+  background: #95a5a6;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.filter-section {
+  background: white;
+  border-radius: 12px;
+  padding: 16px 24px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.filters { display: flex; gap: 20px; flex-wrap: wrap; }
+.filters label { font-size: 13px; font-weight: 600; color: #666; }
+
+.filter-btn {
+  background: #f0f2f5;
+  border: 1px solid #ddd;
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 13px;
+  margin-left: 6px;
+  transition: all 0.2s;
+}
+
+.filter-btn.active { background: #1A5276; color: white; border-color: #1A5276; }
+.filter-btn:hover:not(.active) { background: #e0e4e8; }
+
+.todo-list { list-style: none; }
+
+.todo-item {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: all 0.2s;
+}
+
+.todo-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+.todo-item.completed { opacity: 0.6; background: #f9f9f9; }
+.todo-item.completed .todo-title { text-decoration: line-through; }
+
+.todo-main { display: flex; gap: 12px; align-items: flex-start; flex: 1; }
+.todo-main input[type="checkbox"] { margin-top: 4px; width: 16px; height: 16px; cursor: pointer; }
+
+.todo-content { display: flex; flex-direction: column; gap: 4px; }
+.todo-title { font-size: 15px; font-weight: 600; }
+.todo-desc { font-size: 13px; color: #666; }
+
+.todo-meta { display: flex; gap: 10px; align-items: center; margin-top: 4px; }
+
+.priority-badge {
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.due-date { font-size: 12px; color: #888; }
+
+.todo-actions { display: flex; gap: 8px; flex-shrink: 0; }
+
+.btn-edit {
+  background: #f39c12;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.btn-delete {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.edit-form { display: flex; gap: 8px; flex-wrap: wrap; width: 100%; }
+.edit-form input, .edit-form select { padding: 8px; border: 1px solid #ddd; border-radius: 6px; font-size: 13px; }
+
+.empty-msg { text-align: center; color: #999; padding: 40px; }
+
+.index-css { margin: 0; }
