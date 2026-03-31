@@ -1,4 +1,4 @@
-# Todo App — Full-Stack (React + Node.js + PostgreSQL)
+# To-do List App — Full-Stack (React + Node.js + PostgreSQL)
 
 A full-stack task management application built as part of an **AI vs Manual Development Comparison** experiment.
 
@@ -6,10 +6,10 @@ A full-stack task management application built as part of an **AI vs Manual Deve
 
 This app was built **twice**:
 
-| Approach | Tools Used | Outcome |
-|---|---|---|
-| **Manual** | VS Code, documentation, Stack Overflow | Deep understanding of every line |
-| **AI-Assisted** | Claude, Cursor, LLM prompting | 3x faster — but required critical review |
+| Approach       | Tools / Methods                  |
+|----------------|---------------------------------|
+| **Manual**     | VS Code, official docs, Stack Overflow |
+| **AI-Assisted**| Claude, Cursor, LLM prompting  |
 
 **Key finding:** AI-generated code required validation for security (SQL injection prevention, input sanitization), edge case handling, and clean code principles. AI accelerates — it doesn't replace — engineering judgment.
 
